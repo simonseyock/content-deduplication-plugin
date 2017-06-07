@@ -1,0 +1,12 @@
+{
+  "name": "content-deduplication-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^3.0.0-rc.1"
+  },
+  "author": "simonseyock",
+  "license": "ISC"
+}
