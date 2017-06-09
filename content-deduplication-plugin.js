@@ -30,7 +30,7 @@ class ContentDeduplicationPlugin {
 
     compiler.plugin("compilation", (compilation) => {
       compilation.plugin("succeed-module", (module) => {
-        if (!exclude.some(e => e.test(module.request)) && include.every(i => i.test(module.request))) {
+        if (!exclude.some(e => e.test(module.request)) && include.every(i => i.test(module.request)) && module.getHashDigest) {
           const hash = module.getHashDigest();
 
           if (hashTable[hash] !== undefined) {
